@@ -1,0 +1,23 @@
+Converts high-risk research findings (health, finance, regulation) into
+auditable cinematic video and interactive simulation. Provides a
+deterministic metaphor matrix (S1-S12 across fluvial, arboreal and
+celestial families) and a truth-overlay generator that keeps literal
+findings (effect size, 95% CI, n) visible in every frame, in line with
+the Freeze-Frame Test and the Faithfulness Constraint.
+
+# Package index
+
+## Deterministic metaphor matrix
+
+Signal-driven family selection (fluvial, arboreal, celestial)
+
+- [`metaphorMatrix()`](https://ahmetkutuk1.github.io/dataBiosphere/reference/metaphorMatrix.md)
+  : Deterministic Metaphor Matrix
+
+## Truth overlay
+
+In-frame badge and closing card with literal findings
+
+- [`truthOverlay()`](https://ahmetkutuk1.github.io/dataBiosphere/reference/truthOverlay.md)
+  : Truth Overlay Badge and Closing Card
+

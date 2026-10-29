@@ -1,0 +1,15 @@
+url: https://ahmetkutuk1.github.io/dataBiosphere/
+
+template:
+  bootstrap: 5
+
+reference:
+  - title: Deterministic metaphor matrix
+    desc: Signal-driven family selection (fluvial, arboreal, celestial)
+    contents:
+      - metaphorMatrix
+
+  - title: Truth overlay
+    desc: In-frame badge and closing card with literal findings
+    contents:
+      - truthOverlay
