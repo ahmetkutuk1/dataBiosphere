@@ -47,7 +47,82 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9">
-Converts high-risk research findings (health, finance, regulation) into auditable cinematic video and interactive simulation. Provides a deterministic metaphor matrix (S1-S12 across fluvial, arboreal and celestial families) and a truth-overlay generator that keeps literal findings (effect size, 95% CI, n) visible in every frame, in line with the Freeze-Frame Test and the Faithfulness Constraint.
+<div class="section level1">
+<div class="page-header"><h1 id="databiosphere">dataBiosphere<a class="anchor" aria-label="anchor" href="#databiosphere"></a>
+</h1></div>
+<p><strong>Auditable cinematic metaphors for high-risk research findings.</strong></p>
+<p><code>dataBiosphere</code> converts high-risk findings (health, finance, regulation) into auditable cinematic video and interactive simulation. It enforces three non-negotiable rules:</p>
+<ul>
+<li>
+<strong>Literal core + metaphorical shell</strong> — metaphor encodes the <em>qualities</em> of a number (large/small, certain/uncertain), never replaces it.</li>
+<li>
+<strong>Freeze-frame test</strong> — if a finding (effect size / CI / n) is not recoverable from any single frame, that scene is manipulation and forbidden.</li>
+<li>
+<strong>Faithfulness constraint</strong> — metaphor may not imply what the data does not support.</li>
+</ul>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install-deprecated.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ahmetkutuk1/dataBiosphere"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ahmetkutuk1/dataBiosphere" class="external-link">dataBiosphere</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/metaphorMatrix.html">metaphorMatrix</a></span><span class="op">(</span><span class="st">"S7"</span>, <span class="st">"survival"</span><span class="op">)</span></span>
+<span><span class="va">m</span><span class="op">$</span><span class="va">family</span>       <span class="co"># "fluvial"</span></span>
+<span></span>
+<span><span class="va">overlay</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/truthOverlay.html">truthOverlay</a></span><span class="op">(</span></span>
+<span>  effect_type <span class="op">=</span> <span class="st">"HR"</span>, effect_value <span class="op">=</span> <span class="fl">0.72</span>, ci_lower <span class="op">=</span> <span class="fl">0.61</span>, ci_upper <span class="op">=</span> <span class="fl">0.85</span>,</span>
+<span>  n <span class="op">=</span> <span class="fl">1200</span>, finding_label <span class="op">=</span> <span class="st">"Treatment X vs placebo"</span>, risk_tier <span class="op">=</span> <span class="fl">1</span>, contains_mortality <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span><span class="va">overlay</span><span class="op">$</span><span class="va">badge</span></span>
+<span><span class="co"># "HR = 0.72 (95% CI 0.61-0.85; n = 1,200)"</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="severity-threshold">Severity threshold<a class="anchor" aria-label="anchor" href="#severity-threshold"></a>
+</h2>
+<p>Findings involving death, illness, or trauma (<code>contains_mortality = TRUE</code>) <strong>cannot</strong> be delivered as Tier 3 (game). <code><a href="reference/truthOverlay.html">truthOverlay()</a></code> errors out if you try.</p>
+<table class="table">
+<thead><tr>
+<th>Tier</th>
+<th>Format</th>
+<th>When</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>Cinematic video</td>
+<td>High risk</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>Interactive exploration</td>
+<td>Medium risk</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>Serious game</td>
+<td>Low risk only</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level2">
+<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h2>
+<p>Full reference: <a href="https://ahmetkutuk1.github.io/dataBiosphere/" class="uri">https://ahmetkutuk1.github.io/dataBiosphere/</a></p>
+</div>
+<div class="section level2">
+<h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
+</h2>
+<p>MIT (c) Ahmet Kutuk</p>
+</div>
+</div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -80,7 +155,13 @@ Converts high-risk research findings (health, finance, regulation) into auditabl
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ahmetkutuk1/dataBiosphere/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ahmetkutuk1/dataBiosphere/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://ahmetkutuk1.github.io/dataBiosphere/"><img src="https://img.shields.io/badge/pkgdown-live-brightgreen" alt="pkgdown"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
