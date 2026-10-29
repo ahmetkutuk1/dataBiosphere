@@ -22,3 +22,5 @@ Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.0
 Imports: 
     rlang
+Depends: 
+    R (>= 4.1.0)
