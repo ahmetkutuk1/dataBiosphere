@@ -14,6 +14,24 @@ renderAuditableVideo(
   transparent_bg = FALSE
 )
 }
+\arguments{
+\item{data}{A data.frame.}
+
+\item{time_col}{Character. Name of time column.}
+
+\item{value_col}{Character. Name of value column.}
+
+\item{signal_id}{Character. S1-S12.}
+
+\item{overlay_args}{List. Arguments for truthOverlay().}
+
+\item{output_file}{Character. Path to save MP4.}
+
+\item{transparent_bg}{Logical. Use green screen?}
+}
+\value{
+Invisible NULL.
+}
 \description{
 Render Auditable Video with Truth Overlay
 }

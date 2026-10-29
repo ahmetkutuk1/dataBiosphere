@@ -12,6 +12,20 @@ render3DMetaphor(
   output_file = "3d_output.png"
 )
 }
+\arguments{
+\item{data}{A data.frame.}
+
+\item{time_col}{Character. Name of time column.}
+
+\item{value_col}{Character. Name of value column.}
+
+\item{signal_id}{Character. S1-S12.}
+
+\item{output_file}{Character. Output file path.}
+}
+\value{
+Invisible NULL.
+}
 \description{
 Render 3D Metaphor using rayshader
 }

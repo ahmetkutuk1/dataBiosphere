@@ -13,6 +13,5 @@ extractArticleData(pdf_path)
 A list containing HR, CI_lower, CI_upper, and n.
 }
 \description{
-Reads a PDF, extracts text, and uses DeepSeek API to find HR, CI, and n.
-Falls back to regex if API key is missing.
+Extract Data from Article (PDF) using DeepSeek LLM
 }

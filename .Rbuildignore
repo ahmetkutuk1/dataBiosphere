@@ -4,3 +4,9 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^api$
+^test_3d\.png$
+^test_auditable\.mp4$
+^test_data\.csv$
+^saas_output\.mp4$
+^final_hybrid\.mp4$

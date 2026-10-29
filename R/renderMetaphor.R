@@ -1,4 +1,10 @@
 #' Render Deterministic Metaphor Animation
+#' @param data A data.frame.
+#' @param time_col Character. Name of the time column.
+#' @param value_col Character. Name of the value column.
+#' @param signal_id Character. S1-S12.
+#' @param transparent_bg Logical. Use chromakey background?
+#' @return A gganim object.
 #' @export
 renderMetaphor <- function(data, time_col, value_col, signal_id, transparent_bg = FALSE) {
   matrix_info <- metaphorMatrix(signal_id, 'continuous')

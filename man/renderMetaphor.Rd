@@ -6,6 +6,20 @@
 \usage{
 renderMetaphor(data, time_col, value_col, signal_id, transparent_bg = FALSE)
 }
+\arguments{
+\item{data}{A data.frame.}
+
+\item{time_col}{Character. Name of the time column.}
+
+\item{value_col}{Character. Name of the value column.}
+
+\item{signal_id}{Character. S1-S12.}
+
+\item{transparent_bg}{Logical. Use chromakey background?}
+}
+\value{
+A gganim object.
+}
 \description{
 Render Deterministic Metaphor Animation
 }

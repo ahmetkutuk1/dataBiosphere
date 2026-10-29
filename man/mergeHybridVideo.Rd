@@ -6,6 +6,16 @@
 \usage{
 mergeHybridVideo(r_video, ai_video, output_file = "hybrid_output.mp4")
 }
+\arguments{
+\item{r_video}{Character. Path to R video.}
+
+\item{ai_video}{Character. Path to AI video.}
+
+\item{output_file}{Character. Path to output MP4.}
+}
+\value{
+Invisible NULL.
+}
 \description{
 Merge R Video with AI Video using Green Screen
 }
