@@ -1,7 +1,7 @@
 Package: dataBiosphere
 Type: Package
 Title: Auditable Cinematic Metaphors for High-Risk Research Findings
-Version: 0.1.0
+Version: 0.2.0
 URL: https://github.com/ahmetkutuk1/dataBiosphere, https://ahmetkutuk1.github.io/dataBiosphere/
 BugReports: https://github.com/ahmetkutuk1/dataBiosphere/issues
 Authors@R:
