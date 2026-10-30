@@ -17,10 +17,11 @@ Description: Converts high-risk research findings (health, finance,
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-Suggests: testthat (>= 3.0.0), ggplot2, gganimate, plotly, shiny, pdftools, httr2, jsonlite, plumber, rayshader, av
+Suggests: testthat (>= 3.0.0), ggplot2, gganimate, plotly, shiny, pdftools, httr2, jsonlite, plumber, rayshader, av, rayrender
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.0
 Imports: 
     rlang
 Depends: 
     R (>= 4.1.0)
+SystemRequirements: libpng, libjpeg, freetype, GLU, Mesa, pandoc, zlib, ICU, GDAL, GEOS, PROJ, ImageMagick, ffmpeg, poppler
